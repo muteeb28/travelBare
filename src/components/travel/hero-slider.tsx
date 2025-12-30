@@ -17,7 +17,7 @@ export function HeroSlider() {
       title: "Kashmir Tour Packages",
       subtitle: "Discover Kashmir With Us",
       buttonText: "View Packages",
-      link: "/#kashmir-packages",
+      link: "/packages",
     },
     {
       title: "Perform Umrah 2026",

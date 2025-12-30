@@ -272,6 +272,10 @@ export function TravelNavbar() {
       link: "/",
     },
     {
+      name: "Packages",
+      link: "/packages",
+    },
+    {
       name: "Shop",
       link: "/shop",
     },
