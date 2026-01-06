@@ -13,7 +13,7 @@ export function UmrahFocusCards() {
 
   const cards = [
     {
-      title: "Value Umrah — Starting from Rs 99,990",
+      title: "Value Umrah — Price on request",
       src: "/umrah/pexels-photo-34956781.jpeg",
       slug: "value-umrah",
     },

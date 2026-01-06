@@ -20,7 +20,7 @@ import {
 } from "@/components/ui/animated-modal";
 import { BookingForm } from "@/components/travel/booking-form";
 import { ContactForm } from "@/components/travel/contact-form";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { svgPlaceholder } from "@/lib/svgPlaceholder";
 
@@ -265,39 +265,48 @@ function BookingModalContent() {
   );
 }
 
-export function TravelNavbar() {
-  const navItems = [
-    {
-      name: "Home",
-      link: "/",
-    },
-    {
-      name: "Packages",
-      link: "/packages",
-    },
-    {
-      name: "Shop",
-      link: "/shop",
-    },
-    {
-      name: "Umrah Packages",
-      link: "/umrah-packages",
-    },
-    {
-      name: "Flights",
-      link: "/flights",
-    },
-    {
-      name: "Events",
-      link: "/events",
-    },
-    {
-      name: "Blogs",
-      link: "/blogs",
-    },
-  ];
+const navItems = [
+  {
+    name: "Home",
+    link: "/",
+  },
+  {
+    name: "Packages",
+    link: "/packages",
+  },
+  {
+    name: "Shop",
+    link: "/shop",
+  },
+  {
+    name: "Umrah Packages",
+    link: "/umrah-packages",
+  },
+  {
+    name: "Flights",
+    link: "/flights",
+  },
+  {
+    name: "Events",
+    link: "/events",
+  },
+  {
+    name: "Personal Guide",
+    link: "https://umrahcompanions-2b9p.vercel.app/",
+  },
+];
 
+export function TravelNavbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return <div className="h-16 w-full" />; // Placeholder to avoid layout shift
+  }
 
   return (
     <div className="relative w-full">

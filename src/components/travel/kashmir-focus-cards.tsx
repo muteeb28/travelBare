@@ -12,22 +12,22 @@ const cardData = [
     image: "/kashmir/pexels-wanderinglenses-16024592 (2) (1) (1).jpg",
   },
   {
-    title: "Cozy Kashmir - 4N/5D — Rs 32k / couple",
+    title: "Cozy Kashmir - 4N/5D — Pricing on request",
     slug: "cozy-kashmir-4n5d",
     image: "/kashmir/pexels-gautham-reghu-1029880-19189030 (1).jpg",
   },
   {
-    title: "Paradise Kashmir - 5N/6D — Rs 41k / couple",
+    title: "Paradise Kashmir - 5N/6D — Pricing on request",
     slug: "paradise-kashmir-5n6d",
     image: "/kashmir/pexels-haziqfarooqi-34802043 (1) (1).jpg",
   },
   {
-    title: "Incredible Kashmir - 6N/7D — Rs 48.5k / couple",
+    title: "Incredible Kashmir - 6N/7D — Pricing on request",
     slug: "incredible-kashmir-6n7d",
     image: "/kashmir/pexels-rubaitulazad-12141330 (2) (1).jpg",
   },
   {
-    title: "Beautiful Kashmir - 7N/8D — Rs 58k / couple",
+    title: "Beautiful Kashmir - 7N/8D — Pricing on request",
     slug: "beautiful-kashmir-7n8d",
     image: "/kashmir/pexels-imshafeek-34848384 (1) (1).jpg",
   },

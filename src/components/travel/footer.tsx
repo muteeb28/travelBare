@@ -10,14 +10,14 @@ export function Footer() {
           {/* Contact Information */}
           <div className="space-y-4">
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
-              <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <span className="text-orange-400">📍</span>
-                  <div className="text-gray-300 space-y-1">
-                    <p>Srinagar, J&amp;K</p>
-                    <p>Ganderbal, J&amp;K</p>
-                  </div>
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <span className="text-orange-400">📍</span>
+                <div className="text-gray-300 space-y-1">
+                  <p>Srinagar, J&amp;K</p>
+                  <p>Ganderbal, J&amp;K</p>
                 </div>
+              </div>
               <div className="flex items-center gap-2">
                 <span className="text-orange-400">📞</span>
                 <p className="text-gray-300">+91-6006031751</p>
@@ -26,12 +26,12 @@ export function Footer() {
                 <span className="text-orange-400">✉️</span>
                 <p className="text-gray-300">travelbareofficial@gmail.com</p>
               </div>
-              </div>
             </div>
+          </div>
 
           {/* Popular Links */}
           <div className="space-y-4">
-          <h3 className="text-xl font-semibold mb-4">Popular Links</h3>
+            <h3 className="text-xl font-semibold mb-4">Popular Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/umrah-packages" className="text-gray-300 hover:text-orange-400 transition-colors">
@@ -39,26 +39,30 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-              <Link href="/" className="text-gray-300 hover:text-orange-400 transition-colors">
-                Kashmir Packages
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="text-gray-300 hover:text-orange-400 transition-colors">
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="text-gray-300 hover:text-orange-400 transition-colors">
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
+                <Link href="/" className="text-gray-300 hover:text-orange-400 transition-colors">
+                  Kashmir Packages
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="text-gray-300 hover:text-orange-400 transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-gray-300 hover:text-orange-400 transition-colors">
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link href="https://umrahcompanions-2b9p.vercel.app/" className="text-gray-300 hover:text-orange-400 transition-colors">
+                  Personal Guide
+                </Link>
+              </li>
+            </ul>
+          </div>
 
-          {/* Popular Posts */}
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold mb-4">Popular Posts</h3>
+            <h3 className="text-xl font-semibold mb-4">Personal Guides</h3>
             <ul className="space-y-2 text-gray-300">
               <li>
                 <Link href="/blogs/top-offbeat-locations-kashmir-2025" className="hover:text-orange-400 transition-colors">

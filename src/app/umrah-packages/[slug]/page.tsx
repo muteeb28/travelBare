@@ -117,10 +117,10 @@ const SHARED_IMPORTANT = [
   "Meals provided by hygienic caterers (not hotel kitchen)",
   "Any unused service is not entitled to a refund",
   "Wheelchair assistance available on request",
-  "Airfare calculated at INR 40,000; any difference added to final price",
+  "Airfare included as per availability; any difference added to final price",
   "Upgrades (rooms/hotels/transport) subject to availability and additional cost",
   "Express visa available; processing 2-4 working days",
-  "Prices not valid for Ramadan; currency reference 1 SAR = 22.50 INR",
+  "Prices not valid for Ramadan; pricing on request",
   "Own-flights option not available for group departures",
   "Relatives/friends in KSA cannot share group services without charges",
   "New charges by Saudi authorities will be borne by pilgrims",
@@ -162,14 +162,14 @@ const PACKAGES: PackageDetail[] = [
     title: "Value Umrah",
     duration: "Group departures, all inclusive",
     image: "/umrah/pexels-photo-34956781.jpeg",
-    price: "Starting from Rs 99,990 only - bookings open",
+    price: "Pricing on request",
     subtitle: "Room options: Quad / Triple / Double",
     paymentTerms: SHARED_PAYMENT_TERMS,
     roomOptions: SHARED_ROOM_OPTIONS,
     roomRates: [
-      { label: "Quad", desc: "Standard 04 Guests in a Room", price: "Rs 99,990 Per Person Only" },
-      { label: "Triple", desc: "Standard 03 Guests in a Room", price: "Rs 115,990 Per Person Only" },
-      { label: "Double", desc: "Standard 02 Guests in a Room", price: "Rs 129,990 Per Person Only" },
+      { label: "Quad", desc: "Standard 04 Guests in a Room", price: "Pricing on request" },
+      { label: "Triple", desc: "Standard 03 Guests in a Room", price: "Pricing on request" },
+      { label: "Double", desc: "Standard 02 Guests in a Room", price: "Pricing on request" },
     ],
     highlights: SHARED_HIGHLIGHTS,
     howToBook: ["Choose your package", "Finalise dates & itinerary", "Pay via secure channels", "Travel - we handle the rest"],
@@ -336,9 +336,8 @@ export default function UmrahPackageDetail() {
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`px-4 py-2 rounded-md text-sm font-semibold ${
-                  activeTab === tab ? "bg-amber-100 text-amber-800 border border-amber-200" : "bg-muted text-foreground"
-                }`}
+                className={`px-4 py-2 rounded-md text-sm font-semibold ${activeTab === tab ? "bg-amber-100 text-amber-800 border border-amber-200" : "bg-muted text-foreground"
+                  }`}
               >
                 {tab}
               </button>
@@ -350,9 +349,8 @@ export default function UmrahPackageDetail() {
                 <button
                   key={rate.label}
                   onClick={() => setRoomSelection(rate.label)}
-                  className={`px-3 py-2 text-sm font-semibold rounded-md ${
-                    roomSelection === rate.label ? "bg-amber-100 text-amber-800 border border-amber-200" : "bg-muted text-foreground"
-                  }`}
+                  className={`px-3 py-2 text-sm font-semibold rounded-md ${roomSelection === rate.label ? "bg-amber-100 text-amber-800 border border-amber-200" : "bg-muted text-foreground"
+                    }`}
                 >
                   {rate.label.toUpperCase()}
                 </button>

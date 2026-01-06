@@ -178,9 +178,9 @@ export default function BlogPost() {
         <TravelNavbar />
         <div className="pt-32 flex items-center justify-center">
           <div className="text-center">
-            <h1 className="text-3xl font-bold mb-4">Blog Post Not Found</h1>
+            <h1 className="text-3xl font-bold mb-4">Personal Guide Not Found</h1>
             <Link href="/blogs" className="text-amber-600 hover:underline">
-              Back to Blogs
+              Back to Personal Guides
             </Link>
           </div>
         </div>
@@ -234,7 +234,7 @@ export default function BlogPost() {
             href="/blogs"
             className="inline-flex items-center text-amber-600 hover:text-amber-700 font-semibold"
           >
-            ← Back to all blogs
+            ← Back to all personal guides
           </Link>
         </div>
       </article>
